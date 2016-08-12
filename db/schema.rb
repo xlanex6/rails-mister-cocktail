@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20160812133229) do
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "photo"
+    t.string   "photo_url"
   end
 
   create_table "doses", force: :cascade do |t|
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20160812133229) do
     t.integer  "cocktail_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
-    t.string   "description"
+    t.text     "description"
     t.index ["cocktail_id"], name: "index_doses_on_cocktail_id", using: :btree
     t.index ["ingredient_id"], name: "index_doses_on_ingredient_id", using: :btree
   end
