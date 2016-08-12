@@ -2,12 +2,8 @@
 <p>Find me in app/views/cocktails/index.html.erb</p>
 
 
-<ul>
+<ul class="list-unstyled">
 <% @cocktails.each do |c|%>
 <li><%= c.name%> - <%= link_to 'details', cocktail_path(c) %></li>
 <% end %>
 </ul>
-
-
-
-<%= link_to 'Add a cocktail', new_cocktail_path, data: { turbolinks: 'false' } %>
