@@ -38,6 +38,7 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 gem "attachinary", '1.3.1'
 gem "jquery-fileupload-rails"
+gem 'rails-assets-jquery-file-upload', source: 'https://rails-assets.org'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
