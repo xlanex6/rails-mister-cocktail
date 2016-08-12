@@ -1,6 +1,11 @@
 <%= link_to 'full list', cocktails_path %>
 
 <h1><%= @cocktail.name %></h1>
+
+<% if @cocktail.photo? %>
+  <%= cl_image_tag @cocktail.photo.path, width: 400, height: 200, crop: :fill %>
+<% end %>
+
 <ul class="list-unstyled">
 <% @cocktail.doses.each do |dose| %>
   <li><%= dose.description%> | <%= dose.ingredient.name %></li>
