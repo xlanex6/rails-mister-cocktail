@@ -1,6 +1,7 @@
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all
+    @home_page = %w(home1 home2 home3 home4).sample
   end
 
   def show
