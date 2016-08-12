@@ -9,8 +9,10 @@
   </head>
 
   <body>
+    <div class="container">
     <%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= cloudinary_js_config %>
+    </div>
   </body>
 </html>

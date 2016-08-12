@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require jquery.ui.widget
 //= require jquery.iframe-transport
-//= require jquery-fileupload
+//= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require_tree .

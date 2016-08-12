@@ -46,6 +46,12 @@ GEM
     autoprefixer-rails (6.4.0.1)
       execjs
     aws_cf_signer (0.1.3)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -54,6 +60,7 @@ GEM
     cloudinary (1.1.0)
       aws_cf_signer
       rest-client
+    coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -155,6 +162,8 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    responders (2.2.0)
+      railties (>= 4.2.0, < 5.1)
     rest-client (2.0.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -225,6 +234,8 @@ PLATFORMS
 DEPENDENCIES
   attachinary (= 1.3.1)
   autoprefixer-rails
+  better_errors
+  binding_of_caller
   bootstrap-sass
   byebug
   cloudinary (= 1.1.0)
@@ -240,6 +251,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   rails-assets-jquery-file-upload!
   rails_12factor
+  responders
   rspec-rails
   sass-rails (~> 5.0)
   simple_form
